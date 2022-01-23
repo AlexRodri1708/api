@@ -1,0 +1,56 @@
+###
+GET http://localhost:9000/api HTTP/1.1
+
+###
+POST http://localhost:9000/api HTTP/1.1
+Content-Type: application/json
+
+{
+    "usuario":"Pablo",
+    "password":"098754",
+    "email":"pablo@gmail.com"
+}
+###
+DELETE http://localhost:9000/api/2 HTTP/1.1
+
+###
+GET http://localhost:9000/api/3 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "usuario":"Joffre",
+    "password":"alexxxxx",
+    "email":"jofre@gmail.com"
+}
+
+###
+GET http://localhost:9000/api/comentarios HTTP/1.1
+
+###
+POST http://localhost:9000/api/comentarios HTTP/1.1
+Content-Type: application/json
+
+{
+    "id_u":"3",
+    "comentario":"iiiiiii",
+    "id_p":"7864"
+}
+
+###
+DELETE http://localhost:9000/api/comentarios/2 HTTP/1.1
+
+###
+GET http://localhost:9000/api/comentarios/3 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/comentarios/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "usuario":"Joffre",
+    "password":"alexxxxx",
+    "email":"jofre@gmail.com"
+}

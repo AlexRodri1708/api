@@ -6,15 +6,16 @@ POST http://localhost:9000/api HTTP/1.1
 Content-Type: application/json
 
 {
-    "usuario":"Pablo",
+    "usuario":"Pablo2",
     "password":"098754",
-    "email":"pablo@gmail.com"
+    "email":"pablo@gmail.com2"
 }
 ###
 DELETE http://localhost:9000/api/2 HTTP/1.1
 
 ###
-GET http://localhost:9000/api/3 HTTP/1.1
+GET http://localhost:9000/api/ HTTP/1.1
+
 
 ###
 PUT http://localhost:9000/api/3 HTTP/1.1
@@ -50,7 +51,7 @@ PUT http://localhost:9000/api/comentarios/3 HTTP/1.1
 Content-Type: application/json
 
 {
-    "usuario":"Joffre",
-    "password":"alexxxxx",
-    "email":"jofre@gmail.com"
+    "id_u":"1",
+    "comentario":"iiiiiii0000000",
+    "id_p":"7864"
 }

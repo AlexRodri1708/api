@@ -47,12 +47,12 @@ routes.delete('/:id',(req,res)=>{
     })
 })
 
-routes.get('/:id',(req,res)=>{
+routes.get('/:email',(req,res)=>{
     req.getConnection((err,conn)=>{
         if(err) return res.send(err)
       else{
     
-        conn.query('SELECT *FROM usuario WHERE id=?',[req.params.id],(err,rows)=>{
+        conn.query('SELECT *FROM usuario WHERE email=?',[req.params.email],(err,rows)=>{
             if(err) return res.send(err)
             else
             res.json(rows) 
@@ -75,7 +75,7 @@ routes.put('/:id',(req,res)=>{
     })
 })
 
-routes.get('/comentarios',(req,res)=>{
+routes.get('/',(req,res)=>{
     req.getConnection((err,conn)=>{
         if(err) return res.send(err)
       else{
@@ -90,7 +90,7 @@ routes.get('/comentarios',(req,res)=>{
     })
 })
 
-routes.post('/comentarios',(req,res)=>{
+routes.post('/',(req,res)=>{
     req.getConnection((err,conn)=>{
         if(err) return res.send(err)
       else{
@@ -104,7 +104,7 @@ routes.post('/comentarios',(req,res)=>{
        }
     })
 })
-routes.delete('/comentarios/:id',(req,res)=>{
+routes.delete('/:id',(req,res)=>{
     req.getConnection((err,conn)=>{
         if(err) return res.send(err)
       else{
@@ -118,7 +118,7 @@ routes.delete('/comentarios/:id',(req,res)=>{
        }
     })
 })
-routes.get('/comentarios/:id',(req,res)=>{
+routes.get('/:id',(req,res)=>{
     req.getConnection((err,conn)=>{
         if(err) return res.send(err)
       else{
@@ -131,7 +131,7 @@ routes.get('/comentarios/:id',(req,res)=>{
        }
     })
 })
-routes.put('/comentarios/:id',(req,res)=>{
+routes.put('/:id',(req,res)=>{
     req.getConnection((err,conn)=>{
         if(err) return res.send(err)
       else{
